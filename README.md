@@ -135,7 +135,7 @@ The model will only be available internally, but can be accessed externally thro
 ### Setting up the MAX Model
 
 > NOTE: The set of instructions in this section are a modified version of the one found on the
-[Image Caption Generator Project Page](https://github.com/IBM/MAX-Image-Caption-Generator)
+[Image Caption Generator Project Page](https://github.com/jayadevvasudevan/image-to-caption)
 
 #### 1. Deploy the Model
 
@@ -147,7 +147,7 @@ docker run -it -p 5000:5000 quay.io/codait/max-image-caption-generator
 
 This will pull a pre-built image from Quay (or use an existing image if already cached locally) and run it.
 If you'd rather build the model locally you can follow the steps in the
-[model README](https://github.com/IBM/MAX-Image-Caption-Generator/blob/master/README.md#steps).
+[model README](https://github.com/jayadevvasudevan/image-to-caption/blob/master/README.md#steps).
 
 _Note_ that currently this docker image is CPU only (we will add support for GPU images later).
 
@@ -158,7 +158,7 @@ Go to `http://localhost:5000` to load it. From there you can explore the API and
 
 Use the `model/predict` endpoint to load a test file and get captions for the image from the API.
 
-The [model samples folder](https://github.com/IBM/MAX-Image-Caption-Generator/tree/master/samples)
+The [model samples folder](https://github.com/jayadevvasudevan/image-to-caption/tree/master/samples)
 contains a few images you can use to test out the API, or you can use your own.
 
 You can also test it on the command line, for example:
@@ -197,15 +197,15 @@ curl -F "image=@path/to/image.jpg" -X POST http://localhost:5000/model/predict
 Clone the Image Caption Generator Web App repository locally by running the following command:
 
 ```
-git clone https://github.com/IBM/MAX-Image-Caption-Generator-Web-App
+git clone https://github.com/jayadevvasudevan/image-to-caption
 ```
 
-> Note: You may need to `cd ..` out of the MAX-Image-Caption-Generator directory first
+> Note: You may need to `cd ..` out of the image-to-caption directory first
 
 Then change directory into the local repository
 
 ```
-cd MAX-Image-Caption-Generator-Web-App
+cd image-to-caption
 ```
 
 #### 2. Installing dependencies
